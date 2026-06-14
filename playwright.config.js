@@ -1,4 +1,4 @@
-// @ts-check
+// @js-check
 import { defineConfig, devices } from '@playwright/test';
 import 'dotenv/config';
 
@@ -9,7 +9,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: 1,
-  reporter: [['html', { open: 'on-failure' }]],
+  reporter: [['html', { open: 'always' }]],
 
   use: {
     trace: 'retain-on-failure',
