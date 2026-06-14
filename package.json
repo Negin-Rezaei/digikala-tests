@@ -1,0 +1,22 @@
+{
+  "name": "digikala-e2e-tests",
+  "version": "0.1.0",
+  "description": "Playwright end-to-end tests for digikala.com (Homepage, Search, PLP)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "keywords": ["playwright", "e2e", "digikala", "testing"],
+  "author": "",
+  "license": "ISC"
+}
